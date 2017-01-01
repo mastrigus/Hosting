@@ -125,7 +125,7 @@ body{margin:0;padding:0}
 
 #fade {
     opacity: 0;
-  display: none;
+	display: none;
 }
 .thanks_layout{text-align: center; position: fixed; top:0; left:0; bottom:0; right:0; background:rgba(255,255,255,.8);z-index:99999}
 .thanks_message{font-family: "Helvetica", "Arial", sans-serif;width:50%;background:#fff;border-radius:5px;padding:20px;border:1px solid #DEDEDE;text-align: center; color:#333; position: absolute; top: 10%; left: 50%;margin-left:-25%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
@@ -167,33 +167,34 @@ function myFunction() {
 }
 </script>
 <iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){);}" style="display: none;"></iframe>
-<form action="https://docs.google.com/forms/d/1Xbj92LT6vy0ZoUp13sI9S8mpdrLpkXDgePJccbutBK4/formResponse" id="ss-form" method="POST" onsubmit="fadeEffect.init('fade', 1);document.getElementById('fade').style.display = 'block'" target="hidden_iframe">
+            <form action="https://docs.google.com/forms/d/1Xbj92LT6vy0ZoUp13sI9S8mpdrLpkXDgePJccbutBK4/formResponse" id="ss-form" method="POST" onsubmit="fadeEffect.init('fade', 1);document.getElementById('fade').style.display = 'block'" target="hidden_iframe">
+					<div class="styled-input">
                         <div class="styled-input-in">
-<input type="text" aria-label="Name" name="entry.975086645" value="" id="entry.975086645" dir="auto" title="" required="required">
+								<input type="text" aria-label="Name" name="entry.975086645" value="" id="entry.975086645" dir="auto" title="" required="required">
                                 <label>Name</label>
                                 <span class="span1"></span><span class="span2"></span>
-</div>
-</div>
-<div class="styled-input">
+						</div>
+					</div>
+					<div class="styled-input">
                         <div class="styled-input-in">
-<input type="email" aria-label="Email" name="entry.1200866992" value="" id="entry.1200866992" dir="auto" title="Must be a valid email address" required="required">
+								<input type="email" aria-label="Email" name="entry.1200866992" value="" id="entry.1200866992" dir="auto" title="Must be a valid email address" required="required">
                                 <label>Email</label>
                                 <span class="span1"></span><span class="span2"></span>
-</div>
-</div>
-<div class="styled-input wide">
+						</div>
+					</div>
+					<div class="styled-input wide">
                         <div class="styled-input-in">
-<textarea aria-label="Comments" name="entry.727216553" rows="8" cols="0" id="entry.727216553" dir="auto" aria-required="true" required="required"></textarea>
+								<textarea aria-label="Comments" name="entry.727216553" rows="8" cols="0" id="entry.727216553" dir="auto" aria-required="true" required="required"></textarea>
                                 <label>Message</label>
                                 <span class="span1"></span><span class="span2"></span>
-</div>
-</div>
-<input name="draftResponse" type="hidden" value="[,,&quot;-6097722632927499032&quot;]">
+						</div>
+					</div>
+					<input name="draftResponse" type="hidden" value="[,,&quot;-6097722632927499032&quot;]">
                     <input name="pageHistory" type="hidden" value="0">
                     <input name="fbzx" type="hidden" value="-6097722632927499032">
-<button type="submit" name="submit" class="btn btn-default">Send</button>
-</div>
-</form>
+					<button type="submit" name="submit" class="btn btn-default">Send</button>
+					</div>
+			</form>
             <div id="fade">
 <div class="thanks_layout">
 <div class="thanks_message">

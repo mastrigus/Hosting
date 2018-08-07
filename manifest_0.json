@@ -1,7 +1,7 @@
 {
   "name": "mastrigus.com",
   "short_name": "Mas Trigus",
-  "start_url": "https://www.mastrigus.com/",
+  "start_url": "/?utm_source=homescreen",
   "display": "standalone",
   "background_color": "#f5f5f5",
   "theme_color": "#04549d",

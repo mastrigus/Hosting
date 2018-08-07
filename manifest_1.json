@@ -1,0 +1,38 @@
+{
+  "name": "mastrigus.com",
+  "short_name": "Mas Trigus",
+  "start_url": "https://www.mastrigus.com/",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#04549d",
+  "description": "Personal Blog Untuk Berbagi Pengalaman, Tutorial Blog, Tips, Info Bisnis dan Travel Blogger.",
+  "icons": [{
+    "src": "https://3.bp.blogspot.com/-qUBCLeZAdeQ/W2m94mXG0MI/AAAAAAAADMY/VrNZC4DEFEYJ8vxc9bG0jJ2NeowmVoRBwCLcBGAs/s48/android-icon-96x96.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }, {
+    "src": "https://3.bp.blogspot.com/-qUBCLeZAdeQ/W2m94mXG0MI/AAAAAAAADMY/VrNZC4DEFEYJ8vxc9bG0jJ2NeowmVoRBwCLcBGAs/s72/android-icon-96x96.png",
+    "sizes": "72x72",
+    "type": "image/png"
+  }, {
+    "src": "https://3.bp.blogspot.com/-qUBCLeZAdeQ/W2m94mXG0MI/AAAAAAAADMY/VrNZC4DEFEYJ8vxc9bG0jJ2NeowmVoRBwCLcBGAs/s96/android-icon-96x96.png",
+    "sizes": "96x96",
+    "type": "image/png"
+  }, {
+    "src": "https://3.bp.blogspot.com/-qUBCLeZAdeQ/W2m94mXG0MI/AAAAAAAADMY/VrNZC4DEFEYJ8vxc9bG0jJ2NeowmVoRBwCLcBGAs/s144/android-icon-96x96.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "https://3.bp.blogspot.com/-qUBCLeZAdeQ/W2m94mXG0MI/AAAAAAAADMY/VrNZC4DEFEYJ8vxc9bG0jJ2NeowmVoRBwCLcBGAs/s168/android-icon-96x96.png",
+    "sizes": "168x168",
+    "type": "image/png"
+  }, {
+    "src": "https://3.bp.blogspot.com/-qUBCLeZAdeQ/W2m94mXG0MI/AAAAAAAADMY/VrNZC4DEFEYJ8vxc9bG0jJ2NeowmVoRBwCLcBGAs/s192/android-icon-96x96.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }, {
+    "src": "https://2.bp.blogspot.com/-fn2qtyaDCsQ/W2nk7f0uXBI/AAAAAAAADMk/WJKSMOrn9tY3_k62OAP72QXOBx5IE_8VwCLcBGAs/s512-rw/android-icon-512x512-min.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

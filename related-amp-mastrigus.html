@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Related Post</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<script type='text/javascript'>
+//<![CDATA[
+function related_results_labels(e){for(var t=0;t<e.feed.entry.length;t++){var l=e.feed.entry[t];relatedTitles[relatedTitlesNum]=l.title.$t;for(var r=0;r<l.link.length;r++)if("alternate"==l.link[r].rel){relatedUrls[relatedTitlesNum]=l.link[r].href,relatedTitlesNum++;break}}}function removeRelatedDuplicates(){for(var e=new Array(0),t=new Array(0),l=0;l<relatedUrls.length;l++)contains(e,relatedUrls[l])||(e.length+=1,e[e.length-1]=relatedUrls[l],t.length+=1,t[t.length-1]=relatedTitles[l]);relatedTitles=t,relatedUrls=e}function contains(e,t){for(var l=0;l<e.length;l++)if(e[l]==t)return!0;return!1}function printRelatedLabels(){var e=Math.floor((relatedTitles.length-1)*Math.random()),t=0;for(document.write("<ul>");t<relatedTitles.length&&4>t;)document.write('<li><a href="'+relatedUrls[e]+'">'+relatedTitles[e]+"</a></li>"),e<relatedTitles.length-1?e++:e=0,t++;document.write("</ul>"),document.write()}var relatedTitles=new Array,relatedTitlesNum=0,relatedUrls=new Array;
+//]]>
+</script>
+<style>
+.related-post-by-title{width:100%;margin:25px 0 15px;display:block;position:relative}
+.related-post-by-title ul{padding:15px 10px 10px;border:1px solid #ddd;margin:0;text-align:left;}
+.related-post-by-title h4{display:inline-block;background:#fff;padding:0 15px;height:28px;line-height:28px;border:1px solid #ddd;margin:0;position:absolute;top:-14px;left:15px;font-size:16px;font-weight:700}
+.related-post-by-title li {margin-top:10px;line-height:1.2;padding-left:0!important}
+.related-post-by-title li a{font-size:16px;font-weight:700;}
+@media screen and (max-width:800px){.related-post-style-2 .related-post-item-summary {display:none;}
+}
+</style>
+</head>
+<body>
+<div class='related-post-by-title' id='related-post-by-title'>
+<script type='text/javascript'>
+//<![CDATA[
+function related_results_labels(e){for(var t=0;t<e.feed.entry.length;t++){var l=e.feed.entry[t];relatedTitles[relatedTitlesNum]=l.title.$t;for(var r=0;r<l.link.length;r++)if("alternate"==l.link[r].rel){relatedUrls[relatedTitlesNum]=l.link[r].href,relatedTitlesNum++;break}}}function removeRelatedDuplicates(){for(var e=new Array(0),t=new Array(0),l=0;l<relatedUrls.length;l++)contains(e,relatedUrls[l])||(e.length+=1,e[e.length-1]=relatedUrls[l],t.length+=1,t[t.length-1]=relatedTitles[l]);relatedTitles=t,relatedUrls=e}function contains(e,t){for(var l=0;l<e.length;l++)if(e[l]==t)return!0;return!1}function printRelatedLabels(){var e=Math.floor((relatedTitles.length-1)*Math.random()),t=0;for(document.write("<ul>");t<relatedTitles.length&&4>t;)document.write('<li><a href="'+relatedUrls[e]+'">'+relatedTitles[e]+"</a></li>"),e<relatedTitles.length-1?e++:e=0,t++;document.write("</ul>"),document.write()}var relatedTitles=new Array,relatedTitlesNum=0,relatedUrls=new Array;
+//]]>
+</script>
+<h4>Baca juga:</h4>
+<b:loop values='data:post.labels' var='label'> 
+<b:if cond='data:label.isLast != &quot;true&quot;'/>
+<b:if cond='data:blog.pageType == &quot;item&quot;'> 
+<script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=related_results_labels&amp;max-results=4&quot;' type='text/javascript'/></b:if> 
+</b:loop> 
+<script type='text/javascript'>
+//<![CDATA[
+removeRelatedDuplicates(); printRelatedLabels();
+//]]>
+</script>
+</div>
+<div class='clear'/>
+</body>
+</html>
